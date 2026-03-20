@@ -13,9 +13,9 @@ int div(int a, int b){
 }
 int main() {
     int a = 10, b = 5;
-     printf("%d\n", add);
-    printf("%d\n", sub);
-    printf("%d\n", mul);
-    printf("%d\n", div);
+    printf("%d\n", add(a, b));
+    printf("%d\n", sub(a, b));
+    printf("%d\n", mul(a, b));
+    printf("%d\n", div(a, b));
     return 0;
 }
