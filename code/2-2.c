@@ -1,6 +1,7 @@
 #include <stdio.h>
 void swap(int *x, int *y){
     x ^ y;
+    return x, y;
 }
 int main() {
     int x = 100, y = 200;
