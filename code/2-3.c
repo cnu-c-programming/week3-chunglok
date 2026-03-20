@@ -2,8 +2,6 @@
 void divide(int a, int b, int *q, int *r){
     *q = a / b;
     *r = a % b;
-    return q;
-    return r;
 }
 int main() {
     int a = 27;
