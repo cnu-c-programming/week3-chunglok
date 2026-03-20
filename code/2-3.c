@@ -1,7 +1,7 @@
 #include <stdio.h>
 void divide(int a, int b, int *q, int *r){
-    *q = a / b;
-    *r = a % b;
+    q = a / b;
+    r = a % b;
 }
 int main() {
     int a = 27;
@@ -9,7 +9,7 @@ int main() {
     int q = 0;
     int r = 0;
 
-    divide(a, b, *q, *r);
+    divide(a, b, &q, &r);
     printf("%d\n %d\n", q, r);
     
     return 0;
