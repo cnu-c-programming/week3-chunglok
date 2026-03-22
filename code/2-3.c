@@ -10,7 +10,7 @@ int main() {
     int r = 0;
 
     divide(a, b, &q, &r);
-    printf("%d\n %d\n", q, r);
+    printf("%d\n%d\n", q, r);
     
     return 0;
 }
