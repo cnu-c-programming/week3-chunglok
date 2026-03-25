@@ -3,7 +3,8 @@
 
 void my_sum(char type, int count, ...){
     va_list(ap);
-    va_start(ap, type, count);
+    va_start(ap, type);
+    va_start(ap, count);
      if(type == 'S'){
         for(int i = 0; i < count; i++){
             printf("%s", va_arg(ap, int*));
