@@ -6,10 +6,9 @@ int max_of(int count, ...){
     va_start(ap, count);
     int max = 0;
     for(int i = 0; i < count; i++)
-        if(i = 0 || va_arg(ap, int) > va_arg(ap, int - 1))
+       if(max < va_arg(ap, int)){
             max = va_arg(ap, int);
-        else
-            max = va_arg(ap, int - 1);
+        }
     va_end(ap);
     return max;
 }
