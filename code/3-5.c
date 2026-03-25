@@ -5,25 +5,29 @@ void my_sum(char type, int count, ...){
     va_list(ap);
     va_start(ap, type);
     va_start(ap, count);
-     if(type == 'S'){
-        for(int i = 0; i < count; i++){
-            printf("%s", va_arg(ap, int*));
-            printf(" ");
-        }
-        printf("\n");
-    }
-     else if(type == 'C'){
-        for(int i = 0; i < count; i++){
-            printf("%c", va_arg(ap, int));
-        }
-        printf("\n");
-    }
-    else if(type == 'D'){
-        int sum = 0;
-        for(int i = 0; i < count; i++){
-            sum += va_arg(ap, int);
-        }
-        printf("%d", sum);
+    swhitch(va_arg(ap, char){
+        case 'S':
+            for(int i = 0; i < count; i++){
+                printf("%s", va_arg(ap, int*));
+                printf(" ");
+            }
+                printf("\n");
+            break;
+        case 'C':
+            for(int i = 0; i < count; i++){
+                printf("%c", va_arg(ap, int));
+            }
+            printf("\n");
+            break;
+        case 'D':
+            int sum = 0;
+            for(int i = 0; i < count; i++){
+                sum += va_arg(ap, int);
+            }
+            printf("%d", sum);
+            break;
+         default:
+             break;
     }
     va_end(ap);
     return 0;
