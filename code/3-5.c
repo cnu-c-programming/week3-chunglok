@@ -7,7 +7,7 @@ void my_sum(char type, int count, ...){
      if(type == 'S'){
         for(int i = 0; i < count; i++){
             printf("%s", va_arg(ap, char*));
-            for(int j = 0; j < count - 1 ; j++){
+            if(i < count - 1){
                 printf(" ");
             }
         }
