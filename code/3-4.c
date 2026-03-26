@@ -5,10 +5,12 @@ int max_of(int count, ...){
     va_list ap;
     va_start(ap, count);
     int max = 0;
-    for(int i = 0; i < count; i++)
-       if(max < va_arg(ap, int)){
-            max = va_arg(ap, int);
+    for(int i = 0; i < count; i++){
+       int n =  va_arg(ap, int);
+       if(max < n){
+            max = n;
         }
+    }
     va_end(ap);
     return max;
 }
